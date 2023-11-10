@@ -24,3 +24,12 @@ dividedWords= nltk.word_tokenize(myWords)
 
 #divides it into sentences
 nltk.sent_tokenize(myWords)
+
+
+analyizedData= nltk.FreqDist(dividedWords)
+
+
+#this is how you get the analaysized data
+#print(analyizedData.items())
+filter_words = dict([(m,n) for m,n in analyizedData.items() if len(m)> 3])
+
