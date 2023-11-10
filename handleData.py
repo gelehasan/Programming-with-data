@@ -17,3 +17,10 @@ myWords= "Bro i really dont what to say. but this guy has a lot of things to cry
 
 #What this line does is, it basically divids the sentence into sepearete words
 nltk.word_tokenize(myWords)
+
+
+#Converts the words into separate array elements
+dividedWords= nltk.word_tokenize(myWords)
+
+#divides it into sentences
+nltk.sent_tokenize(myWords)
