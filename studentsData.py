@@ -16,3 +16,6 @@ df["Students"].mean()
 df["Students"].describe()
 
 df.shape
+
+# replacing the index numbers with the courses code
+df.set_index("Code", inplace=True)
