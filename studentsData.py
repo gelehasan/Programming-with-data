@@ -8,7 +8,7 @@ df = pd.read_csv("sample.csv")
 df["Students"].describe()
 
 df.tail(3)
-# You might want to pick some arbitrary slices to explore at more depth.
+# slicing to explore at more depth.
 df[6:9]
 
 df["Students"].mean()
@@ -19,3 +19,6 @@ df.shape
 
 # replacing the index numbers with the courses code
 df.set_index("Code", inplace=True)
+
+# identifying some trends at a cursory level.
+df.sort_values(by=['Level'], ascending=True)
