@@ -27,6 +27,8 @@ dividedWords= nltk.word_tokenize(myWords)
 nltk.sent_tokenize(myWords)
 
 
+# what this code does is, it basically makes key pair values
+# to the most word that occuring 
 analyizedData= nltk.FreqDist(dividedWords)
 
 
