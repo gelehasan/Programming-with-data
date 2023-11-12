@@ -20,5 +20,5 @@ df.shape
 # replacing the index numbers with the courses code
 df.set_index("Code", inplace=True)
 
-# identifying some trends at a cursory level.
+# we sorting the level columb in ascending order
 df.sort_values(by=['Level'], ascending=True)
