@@ -10,6 +10,7 @@ import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 from nltk import sent_tokenize, word_tokenize
 
+#downloading essential sources to use the module
 nltk.download("punkt")
 
 
