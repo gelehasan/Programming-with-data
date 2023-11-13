@@ -33,3 +33,6 @@ df.plot.scatter(x = 'Level', y = 'Students')
 
 #plots the data on a bar
 df.sort_values(by='Students', ascending=False).plot(kind="bar", rot=0, x = 'Level', y = 'Students')
+
+#Displays data on a bar standing
+df2.plot.bar(width=0.9,x='Students',y="Average Grade")
