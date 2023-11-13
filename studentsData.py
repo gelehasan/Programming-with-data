@@ -36,3 +36,6 @@ df.sort_values(by='Students', ascending=False).plot(kind="bar", rot=0, x = 'Leve
 
 #Displays data on a bar standing
 df2.plot.bar(width=0.9,x='Students',y="Average Grade")
+
+# comparasion the exam and average grades
+df2.sort_values(by='Students').plot(kind="barh", x="Exam", y="Average Grade")
