@@ -30,3 +30,6 @@ df.loc[(df['Students'] < 71) & (df['Exam'] ==  0)]
 
 # plots the student data
 df.plot.scatter(x = 'Level', y = 'Students')
+
+#plots the data on a bar
+df.sort_values(by='Students', ascending=False).plot(kind="bar", rot=0, x = 'Level', y = 'Students')
