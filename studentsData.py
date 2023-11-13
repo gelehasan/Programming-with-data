@@ -22,3 +22,8 @@ df.set_index("Code", inplace=True)
 
 # we sorting the level columb in ascending order
 df.sort_values(by=['Level'], ascending=True)
+
+
+# Showing students who match exam  condition for course work based project 
+df[df["Students"] < 71]
+df.loc[(df['Students'] < 71) & (df['Exam'] ==  0)]
