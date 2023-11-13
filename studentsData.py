@@ -27,3 +27,6 @@ df.sort_values(by=['Level'], ascending=True)
 # Showing students who match exam  condition for course work based project 
 df[df["Students"] < 71]
 df.loc[(df['Students'] < 71) & (df['Exam'] ==  0)]
+
+# plots the student data
+df.plot.scatter(x = 'Level', y = 'Students')
