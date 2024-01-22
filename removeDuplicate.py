@@ -7,7 +7,7 @@ def remove_duplicates(strings):
             result.append(string)
     return result
 
-# Example usage:
+
 strings = ["Apple", "Banana", "Apple", "Cherry", "Banana"]
 unique_strings = remove_duplicates(strings)
 print(unique_strings)
