@@ -15,7 +15,6 @@ nltk.download("punkt")
 
 
 myWords= "Bro i really dont what to say. but this guy has a lot of things to cry about, okay bro. i really wanted to show you guys what i like, but bro dont like it"
-
 #What this line does is, it basically divids the sentence into sepearete words
 nltk.word_tokenize(myWords)
 
@@ -26,11 +25,9 @@ dividedWords= nltk.word_tokenize(myWords)
 #divides it into sentences
 nltk.sent_tokenize(myWords)
 
-
 # what this code does is, it basically makes key pair values
 # to the most word that occuring 
 analyizedData= nltk.FreqDist(dividedWords)
-
 
 #this is how you get the analaysized data
 #print(analyizedData.items())
